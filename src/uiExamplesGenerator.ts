@@ -98,7 +98,8 @@ const generateComponentImports = (
         // Namespace format: namespace:component
         const [namespace, componentName] = item.component.split(':')
         const kebabCaseName = convertToKebabCase(componentName)
-        imports.add(`import ${kebabCaseName} from '@${namespace}/${componentName}/${componentName}.component.yml';`)
+        // Use relative path from ui_examples directory to components
+        imports.add(`import ${kebabCaseName} from '../components/${componentName}/${componentName}.component.yml';`)
       } else {
         // Relative path format: ./components/badge/badge.component.yml
         const componentPath = item.component
@@ -108,7 +109,7 @@ const generateComponentImports = (
         
         // Convert relative path to namespace alias
         // ./components/badge/badge.component.yml -> @umami/badge/badge.component.yml
-        const namespacePath = componentPath.replace('./components/', '@umami/')
+        const namespacePath = componentPath.replace('./components/', '../components/')
         imports.add(`import ${kebabCaseName} from '${namespacePath}';`)
       }
     }

@@ -25,7 +25,7 @@ import { getProjectName } from './namespaces.js'
 // Vite plugin to process UI Exemple YAML files
 export default ({
   namespaces = {} as Namespaces,
-}) => ({
+} = {}) => ({
   name: 'vite-plugin-ui-examples',
   async load(id: string) {
     if (!id.endsWith('.ui_examples.yml')) return
