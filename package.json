@@ -26,12 +26,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fredboulanger/ui-examples-storybook.git"
+    "url": "https://github.com/Fred-Boulanger/ui-examples-storybook"
   },
   "bugs": {
-    "url": "https://github.com/fredboulanger/ui-examples-storybook/issues"
+    "url": "https://github.com/Fred-Boulanger/ui-examples-storybook/issues"
   },
-  "homepage": "https://github.com/fredboulanger/ui-examples-storybook#readme",
+  "homepage": "https://github.com/Fred-Boulanger/ui-examples-storybook#readme",
   "dependencies": {
     "js-yaml": "^4.1.0"
   },
