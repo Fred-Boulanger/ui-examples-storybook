@@ -1,0 +1,53 @@
+{
+  "name": "@fredboulanger/ui-examples-storybook",
+  "version": "0.1.3",
+  "description": "Generate Storybook stories from UI examples YAML files",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "storybook",
+    "ui-examples",
+    "yaml",
+    "components",
+    "drupal",
+    "sdc"
+  ],
+  "author": "fredboulanger",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredboulanger/ui-examples-storybook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fredboulanger/ui-examples-storybook/issues"
+  },
+  "homepage": "https://github.com/fredboulanger/ui-examples-storybook#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "peerDependencies": {
+    "storybook": "^8.0.0 || ^9.0.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
